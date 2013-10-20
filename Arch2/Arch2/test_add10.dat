@@ -1,0 +1,13 @@
+MOV $0, 0          
+MOV $1, 0 
+MOV $3, 10
+CMPSUB.A $0, $3
+BEQ exit		
+LDW $2, $1	
+ADD $2, $2, 10
+STW $2, $1
+ADD $0, $0, 1	
+ADD $1, $1, 4	
+MOV $5, 12	
+JUMP $5	
+exit:	
